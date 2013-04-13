@@ -1,0 +1,5 @@
+{
+  "coffee": "coffee -w -l -j index.js -c src/scripts/",
+  "jade": "jade -w -P -O . src/views/index.jade",
+  "stylus": "stylus -u nib -o . -w src/styles/"
+}
