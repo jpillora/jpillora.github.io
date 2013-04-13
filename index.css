@@ -1,26 +1,52 @@
 body,
 html {
-  width: 100%;
-  height: 100%;
   padding: 0;
   margin: 0;
 }
-.name {
-  top: 10px;
-  left: 10px;
-  padding: 50px;
-  background: whiteSmoke;
-  margin: 50px;
+.title {
+  position: absolute;
+  left: 70px;
+  top: 420px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 50px;
+}
+.flickr {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.feature {
+  -webkit-box-shadow: 6px 6px 3px 3px #333;
+  box-shadow: 6px 6px 3px 3px #333;
+  margin: 5%;
+  width: 420px;
+  height: 420px;
   opacity: 0.65;
   filter: alpha(opacity=65);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+  background: url("img/dp.jpg");
+  background-repeat: no-repeat;
 }
-.abs {
+.feature .follows {
+  padding-top: 5px;
+  height: 50%;
+  width: 415px;
+  text-align: right;
+}
+.feature .follows .linkedin {
+  margin-bottom: 4px;
+}
+.feature .follows .linkedin .li-connect-widget {
+  background: whiteSmoke;
+  padding: 2px 3px 2px 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.bg {
   position: absolute;
   top: 0;
   left: 0;
-}
-.bg {
   z-index: -1;
   width: 100%;
   height: 100%;
