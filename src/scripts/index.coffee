@@ -3,9 +3,18 @@ i = 0
 
 imgs = [
   'cradle'
+  'sun-cradle'
+  'wallaby'
+  'bayoffires'
   'branch'
   'sun-grass'
+  'devil'
   'field'
+  'freycinet'
+  'lake'
+  'lizard'
+  'richmond'
+  'sun-road'
 ]
 
 next = ->
@@ -15,7 +24,7 @@ next = ->
   console.log img
   active = document.querySelector('.bg.active')
   inactive = document.querySelector('.bg.inactive')
-  inactive.setAttribute('style', "background-image: url('img/#{img}.jpg')")
+  inactive.setAttribute('style', "background-image: url('img/tazzie/#{img}.jpg')")
   setTimeout ->
     active.setAttribute('class', 'bg inactive')
     inactive.setAttribute('class', 'bg active')

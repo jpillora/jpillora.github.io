@@ -2,48 +2,67 @@ body,
 html {
   padding: 0;
   margin: 0;
-}
-.cage {
-  opacity: 0.85;
-  filter: alpha(opacity=85);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+  background: #808080;
 }
 .title {
-  margin: -140px 0 0 50px;
   color: #fff;
   font-weight: 900;
   font-size: 50px;
   line-height: 50px;
+  text-align: right;
 }
-.flickr {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
-.feature {
-  -webkit-box-shadow: 6px 6px 3px 3px #333;
-  box-shadow: 6px 6px 3px 3px #333;
+.dp {
+  -webkit-box-shadow: -3px 3px 2px 2px #333;
+  box-shadow: -3px 3px 2px 2px #333;
   margin: 5%;
-  max-width: 420px;
-  height: 420px;
+  max-width: 200px;
+  height: 200px;
   background: url("img/dp.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  -webkit-background-size: 200px 200px;
+  -moz-background-size: 200px 200px;
+  background-size: 200px 200px;
 }
-.feature .follows {
+.follows {
   padding-top: 5px;
   height: 50%;
   width: 98%;
-  text-align: right;
+  text-align: center;
 }
-.feature .follows .linkedin {
+.follows .linkedin {
   margin-bottom: 4px;
 }
-.feature .follows .linkedin .li-connect-widget {
+.follows .linkedin .li-connect-widget {
   background: whiteSmoke;
   padding: 2px 3px 2px 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+}
+.follows .flickr {
+  margin: 20px;
+}
+.sidebar {
+  position: fixed;
+  right: 0;
+  ((null)): 0;
+  padding: 10px;
+  width: 200px;
+  height: 100%;
+  -webkit-box-shadow: -3px 3px 2px 2px #333;
+  box-shadow: -3px 3px 2px 2px #333;
+}
+.sidebar .behind {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 220px;
+  height: 100%;
+  background: #808080;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
 }
 .bg {
   position: absolute;
@@ -53,6 +72,10 @@ html {
   width: 100%;
   height: 100%;
   background-position: 25% 50%;
+  -webkit-background-size: auto 120%;
+  -moz-background-size: auto 120%;
+  background-size: auto 120%;
+  background-repeat: no-repeat;
   opacity: 1;
   -ms-filter: none;
   filter: none;

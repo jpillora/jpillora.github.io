@@ -4,43 +4,55 @@
 body,html
   padding: 0
   margin: 0
-
-.cage
-  opacity: 0.85
-
+  background: grey
 
 .title
-  margin: -140px 0 0 50px
+  // margin: -140px 0 0 50px
   color: white
   font-weight: 900
   font-size: 50px
   line-height: 50px
+  text-align: right
 
-.flickr
-  fixed: bottom right
-
-.feature
-  box-shadow: 6px 6px 3px 3px #333
+.dp
+  box-shadow: -3px 3px 2px 2px #333
   margin: 5%
-  max-width: 420px
-  height: 420px
+  max-width: 200px
+  height: 200px
   background: url('img/dp.jpg')
   background-repeat: no-repeat
   background-position: 50% 50%
+  background-size: 200px 200px
 
-  .follows
-    padding-top: 5px
-    height: 50%
-    width: 98%
-    text-align: right
+.follows
+  padding-top: 5px
+  height: 50%
+  width: 98%
+  text-align: center
 
-    .linkedin
-      margin-bottom: 4px
-      .li-connect-widget
-        background: whiteSmoke
-        padding: 2px 3px 2px 3px
-        border-radius: 3px
+  .linkedin
+    margin-bottom: 4px
+    .li-connect-widget
+      background: whiteSmoke
+      padding: 2px 3px 2px 3px
+      border-radius: 3px
 
+  .flickr
+    margin: 20px
+
+.sidebar
+  fixed: right
+  padding: 10px
+  width: 200px
+  height: 100%
+  box-shadow: -3px 3px 2px 2px #333
+  .behind
+    absolute: left top
+    z-index: -1
+    width: 220px
+    height: 100%
+    background: grey
+    opacity:0.65
 
 .bg
   absolute: top left
@@ -48,6 +60,8 @@ body,html
   width: 100%
   height: 100%
   background-position: 25% 50%
+  background-size: auto 120%;
+  background-repeat: no-repeat
   opacity: 1
   transition: opacity 3s ease-in-out
   &.inactive
