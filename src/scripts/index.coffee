@@ -28,8 +28,9 @@ next = ->
   setTimeout ->
     active.setAttribute('class', 'bg inactive')
     inactive.setAttribute('class', 'bg active')
-  , 3*1000
+    setTimeout next, 3*1000
+  , 12*1000
 
-setInterval next, 10*1000
+setTimeout next, 12*1000
 
 

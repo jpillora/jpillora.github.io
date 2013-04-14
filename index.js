@@ -19,10 +19,11 @@
     inactive.setAttribute('style', "background-image: url('img/tazzie/" + img + ".jpg')");
     return setTimeout(function() {
       active.setAttribute('class', 'bg inactive');
-      return inactive.setAttribute('class', 'bg active');
-    }, 3 * 1000);
+      inactive.setAttribute('class', 'bg active');
+      return setTimeout(next, 3 * 1000);
+    }, 12 * 1000);
   };
 
-  setInterval(next, 10 * 1000);
+  setTimeout(next, 12 * 1000);
 
 }).call(this);
